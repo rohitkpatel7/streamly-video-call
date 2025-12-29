@@ -1,60 +1,80 @@
-<<<<<<< HEAD
-# streamly-video-call
-video call 
-=======
-<h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
+# Streamly – Video Call & Language Exchange App
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+Streamly is a full stack web application where users can connect with language partners,
+send friend requests, and make real-time video calls.
 
-Highlights:
+This project was built as a learning project to understand authentication,
+real-time communication, and full stack deployment.
 
-- 🌐 Real-time Messaging with Typing Indicators & Reactions
-- 📹 1-on-1 and Group Video Calls with Screen Sharing & Recording
-- 🔐 JWT Authentication & Protected Routes
-- 🌍 Language Exchange Platform with 32 Unique UI Themes
-- ⚡ Tech Stack: React + Express + MongoDB + TailwindCSS + TanStack Query
-- 🧠 Global State Management with Zustand
-- 🚨 Error Handling (Frontend & Backend)
-- 🚀 Free Deployment
-- 🎯 Built with Scalable Technologies like Stream
-- ⏳ And much more!
+## Live Project Links
 
----
+Frontend: https://streamly-frontend-nu.vercel.app  
+Backend API: https://streamly-backend-2nmm.onrender.com
 
-## 🧪 .env Setup
+## Features
 
-### Backend (`/backend`)
+- User signup and login
+- JWT authentication using cookies
+- User onboarding
+- Friend request system
+- Language exchange profiles
+- Real-time video calling using Stream API
+- Responsive UI
 
-```
-PORT=5001
-MONGO_URI=your_mongo_uri
-STEAM_API_KEY=your_steam_api_key
-STEAM_API_SECRET=your_steam_api_secret
-JWT_SECRET_KEY=your_jwt_secret
-NODE_ENV=development
-```
+## Tech Stack
 
-### Frontend (`/frontend`)
+Frontend:
+- React (Vite)
+- Tailwind CSS
+- React Router
+- Axios
 
-```
-VITE_STREAM_API_KEY=your_stream_api_key
-```
+Backend:
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Stream Video API
 
----
+Deployment:
+- Frontend deployed on Vercel
+- Backend deployed on Render
+- Database hosted on MongoDB Atlas
 
-## 🔧 Run the Backend
+## How to Run Locally
 
-```bash
-cd backend
-npm install
-npm run dev
-```
+1. Clone the repository
 
-## 💻 Run the Frontend
+git clone https://github.com/rohitkpatel7/streamly-video-call.git  
+cd streamly-video-call
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
->>>>>>> 35573e7 (Initial commit)
+2. Backend setup
+
+cd backend  
+npm install  
+
+Create a .env file and add required environment variables.
+
+npm run dev  
+
+Backend will run on http://localhost:5001
+
+3. Frontend setup
+
+cd frontend  
+npm install  
+npm run dev  
+
+Frontend will run on http://localhost:5173
+
+## Notes
+
+- Environment variables are not committed to GitHub
+- Authentication is handled using HTTP-only cookies
+- Stream API is used only from backend for security
+
+## Developer
+
+Rohit Patel  
+GitHub: https://github.com/rohitkpatel7
