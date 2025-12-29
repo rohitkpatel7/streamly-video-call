@@ -18,10 +18,11 @@ const __dirname = path.resolve();
  */
 app.use(
   cors({
-    origin: true,
+    origin: "https://streamly-frontend-nu.vercel.app",
     credentials: true,
   })
 );
+
 
 
 // IMPORTANT: handle preflight
