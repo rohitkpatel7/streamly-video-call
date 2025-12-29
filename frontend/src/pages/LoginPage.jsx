@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { ShipWheelIcon } from "lucide-react";
-import { Link } from "react-router";
 import useLogin from "../hooks/useLogin";
 
 const LoginPage = () => {

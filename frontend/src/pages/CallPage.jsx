@@ -15,7 +15,6 @@ import {
   StreamTheme,
   CallingState,
   useCallStateHooks,
-  useParticipants,
   ParticipantView,
 } from "@stream-io/video-react-sdk";
 
@@ -130,6 +129,7 @@ const CallContent = () => {
 /* ---------------- CUSTOM LAYOUT ---------------- */
 
 const CustomLayout = () => {
+  const { useParticipants } = useCallStateHooks();
   const participants = useParticipants();
 
   return (
